@@ -1,0 +1,10 @@
+﻿<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".gitignore" />
+    <File Path="README.md" />
+  </Folder>
+  <Project Path="src\chat-with-functions\chat-with-functions.csproj" Type="Classic C#" />
+  <Project Path="src\embeddings\Embeddings.csproj" Type="Classic C#" />
+  <Project Path="src\image-recognition\ImageRecognition.csproj" Type="Classic C#" />
+  <Project Path="src\simple-chat\simple-chat.csproj" Type="Classic C#" />
+</Solution>
