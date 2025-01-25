@@ -24,14 +24,14 @@ var chatClient = app.Services.GetRequiredService<IChatClient>();
 // var message = new ChatMessage(ChatRole.User, "What's in this image?");
 // message.Contents.Add(new ImageContent(
 //     File.ReadAllBytes(
-//         "C:\\Users\\rkeen\\source\\repos\\samples-microsoft-extensions-ai\\src\\image-recognition\\TrafficImages\\1.jpg"),
+//         "<path to your image"),
 //     "image/jpg"));
 //
 // var response = await chatClient.CompleteAsync([message]);
 // Console.WriteLine(response.Message.Text);
 
 // Multiple images
-var dir = Path.Combine(AppContext.BaseDirectory, "C:\\Users\\rkeen\\source\\repos\\samples-microsoft-extensions-ai\\src\\image-recognition\\TrafficImages");
+var dir = Path.Combine(AppContext.BaseDirectory, "<path to your image folder>");
 foreach (var imagePath in Directory.GetFiles(dir, "*.jpg"))
 {
     var name = Path.GetFileNameWithoutExtension(imagePath);
